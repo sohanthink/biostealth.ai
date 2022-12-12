@@ -1,0 +1,1630 @@
+/* COMMON CSS AND THINGS */
+:root{
+--main_col:#204ECF;
+}
+.clr{
+  clear: both;
+}
+
+.primary_color{
+  color: var(--main_col);
+}
+.bg_primary{
+  background: var(--main_col);
+}
+html{
+  overflow-x: hidden;
+}
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* ========================
+HEADER CSS STARTS FROM HERE
+======================== */
+
+header .fa-align-justify{
+  color:rgb(0, 0, 0);
+}
+.navbar-nav .nav-link {
+	padding-right: 2px;
+	padding-left: 2px;
+	margin-right: 40px !important;
+}
+
+header .nav-left_slide{
+  display: flex;
+  position: relative;
+}
+header .nav-left_slide li{
+  list-style: none;
+}
+header .navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 17px;
+  color: #262D3D;
+  font-weight: 400;
+  padding: 0 26px;
+}
+
+header .nav-left_slide ul{
+  display: flex;
+}
+header .nav-left_slide li{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 13px;
+}
+#search_form {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  z-index: 999;
+  transform: translate(-80%,-50%);
+}
+#search_form .form_data {
+  display: flex;
+}
+header button{
+  padding: 10px 15px;
+  border-radius: 5px; 
+  border: 1px solid #204fcf00;
+  background: #204ECF; 
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  transition: all linear 0.4s;
+}
+header button:hover{
+  background-color: #204fcf00 ;
+  border: 1px solid #204ECF;
+}
+#search_form input{
+  width: 70%;
+}
+.nav-item .dropdown{
+  z-index: 999;
+}
+
+
+/* nav er fixed er jinis */
+
+header .navbar-fixed{
+  position: fixed;
+  z-index: 9999;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+header .active{
+  background-color: #204ECF;
+  color: white;
+  border-radius: 7px;
+  transition: all linear 0.4s;
+}
+header .active:hover{
+  color: white;
+  border-radius: 10px;
+}
+
+
+/* another video part starts */
+
+#myVideo {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+#myVideo .content {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myVideo #myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+
+  /*=============================================
+                another video part starts
+   ============================================== */
+
+.bg-video-wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+video {
+  max-width: 100%;
+  max-height: 100vh;
+  z-index: 1;
+}
+.bg-video-wrap  .content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(60, 1, 128, 0.596);
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.bg-video-wrap  .banner_content {
+  width: 60%;
+}
+.bg-video-wrap .banner_content h4{
+  background-color: #204ECF36;
+  padding: 5px;
+  margin-right: 523px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.bg-video-wrap .banner_content h1 {
+  font-size: 66px;
+  padding: 25px 0 15px 0;
+  font-weight: bold;
+}
+.bg-video-wrap  .banner_content p {
+  font-size: 14px;
+  padding-right: 250px;
+  color: #EFEFEF;
+  padding-bottom: 20px;
+}
+
+.bg-video-wrap  ul{
+  margin-top: 50px;
+  margin: 0;
+  padding: 0px
+}
+.bg-video-wrap  ul li{
+  display: inline-block;
+  list-style: none;
+  font-size: 24px;
+}
+.bg-video-wrap  ul li a{
+  font-size: 24px;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+}
+.bg-video-wrap  ul li button{
+  border: 0px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: white;
+  margin-left: 20px;
+}
+
+.bg-video-wrap  #myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+/* Graphics part start here */
+
+
+.bg-graphics{
+  background: url('../images/icon-bg.jpg') ;
+  padding-left: 135px;
+}
+.bg-graphics .item h2{
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 35px;
+color: white;
+}
+.bg-graphics .item h4{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: regular;
+  font-size: 17px;
+  color: white;
+  }
+  .bg-graphics .item .icon{
+    padding: 83px 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bg-graphics .item .icon svg{
+    margin-right: 30px;
+  }
+
+  .bg-graphics .text_content {
+    position: absolute;
+    top: 93px;
+    left: 104px;
+    text-align: start;
+  }
+ 
+
+
+
+
+/* ========================
+ABOUT CSS STARTS FROM HERE
+======================== */
+
+#about{
+  margin-top: 70px;
+}
+
+#about img {
+	width: 96%;
+	border-radius: 20px;
+	margin-top: 30px;
+	margin-bottom: 95px;
+}
+#about button{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #204ECF;
+  background: FFFFFF;
+  padding: 10px 18px;
+  border: 0;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 90px;
+}
+#about h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 56px;
+  color: #262D3D;
+  font-weight: bold;
+  margin-top: 25px;
+}
+#about p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #415674;
+  font-weight: normal;
+  margin-top: 15px;
+  padding-right: 110px;
+}
+#about span{
+  float: left;
+  padding-left: 60px;
+  width: 49%;
+  position: relative;
+  padding:20px 35px 0px 60px;
+  margin: 20px 0px;
+}
+#about span h4{
+  font-size: 22px;
+  color: #262D3D;
+  font-weight: bold;
+}
+#about span h6{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #415674;
+  font-weight: normal;
+  padding-right: 75px;
+}
+#about span svg{
+  position: absolute;
+  left: 0px;
+  top:20px
+}
+#about .about_buttons{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #204ECF;
+  background: FFFFFF;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 7px;
+}
+#about .about_buttons li{
+  display: inline-block;
+  list-style: none;
+}
+#about .about_buttons li a{
+  display: inline-block;
+  list-style: none;
+  background: var(--main_col);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  margin-right: 30px;
+}
+#about .about_buttons li a.work{
+  display: inline-block;
+  list-style: none;
+  background: white;
+  color: var(--main_col);
+  padding: 10px 25px;
+  border-radius: 15px;
+  margin-right: 30px;
+  text-decoration: underline;
+}
+
+
+
+
+/* ========================
+CATEGORY CSS STARTS FROM HERE
+======================== */
+
+#category{
+  background:#F5F7FE;
+  padding-bottom: 50px;
+}
+#category h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #262D3D;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+  padding-top: 100px;
+}
+#category .item{
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 27px;
+}
+#category .item img {
+	height: 60px;
+	padding: 5px;
+}
+#category .item h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #262D3D;
+  font-weight: bold;
+  position: absolute;
+  left: 95px;
+  top: 35px;
+}
+#category .bottom{
+  padding-bottom: 51px;
+}
+.m_btn{
+  background: var(--main_col);
+  color: white;
+  display: inline-block;
+  line-height: 60px;
+  padding: 0 30px;
+  border-radius: 30px;
+  /* border: 1px solid var(--main_col); */
+  transition: all linear 0.4s;
+}
+.m_btn:hover{
+  background: white;
+  color: var(--main_col) !important;
+}
+
+
+
+/* ============================
+CERTIFICATE CSS STARTS FROM HERE
+============================= */
+
+#certificate{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #204ECF;
+}
+#certificate h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 55px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 15px;
+  padding-right: 80px;
+}
+#certificate p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 5px;
+  padding-top: 40px;
+  padding-right: 80px;
+}
+#certificate img{
+  width: 100%;
+  border-radius: 20px;
+}
+#certificate .content{
+  padding: 50px 5px;
+}
+#certificate .content a {
+	display: inline-block;
+	list-style: none;
+	background: #ffc107;
+	color: white;
+	padding: 10px 45px;
+	border-radius: 30px;
+	margin-right: 30px;
+  margin-top: 20px;
+  transition: all linear 0.4s;
+}
+#certificate .content a:hover {
+	background: #ffffff;
+	color: #204ECF;
+}
+
+
+
+
+
+/* ========================
+COURSE CSS STARTS FROM HERE
+======================== */
+#course {
+  padding: 100px 0px;
+
+}
+figure {
+  padding: 12px;
+  box-shadow: 0px 0px 20px #b3b3b347;
+  border-radius: 7px;
+}
+#course h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #262D3D;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+#course img{
+  width: 100%;
+  repeat: no-repeat;
+  margin-bottom: 7px;
+}
+#course span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #809ABE;
+  font-weight: 400;
+}
+#course h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #415674;
+  margin:5px 0px 10px 0px;
+  font-weight: bold;
+}
+#course h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+#course .course_cart_start {
+  display: flex;
+  padding: 0;
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+#course .course_cart_start li{
+  list-style: none;
+  font-size: 12px;
+  color: #686868;;
+}
+#course hr{
+  margin: 0;
+}
+#course .course_cart_bottom {
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  padding-right: 10px;
+}
+#course .course_cart_bottom li{
+  list-style: none;
+  font-size: 12px;
+  color: #809ABE;
+}
+#course li .fa-star{
+  color: #ffac00;
+  padding:0px 3px
+}
+#course .course_user {
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+#course .course_user img{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+  margin-top: 7px;
+}
+#course .course_user li{
+  list-style: none;
+  font-weight: 400;
+  font-size: 17px;
+  color: #415674;
+  justify-content: end;
+    display: flex;
+    align-items: center;
+}
+#course .slick-dots{
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#course .slick-dots li{
+  display: inline-block;
+}
+#course .slick-dots li button {
+  font-size: 0px;
+  height: 12px;
+  width: 12px;
+  border: 0;
+  background: #204ecf66;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 10px;
+}
+#course .slick-dots li.slick-active button {
+  background: var(--main_col);
+  border: 0;
+  
+}
+
+
+
+
+/* ============================
+COMPANIES CSS STARTS FROM HERE
+=========================== */
+
+#companies{
+  background:#204ECF;
+}
+#companies h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+  padding-top: 100px;
+}
+#companies img{
+  width: 100%;
+  repeat: no-repeat;
+}
+#companies .bottom{
+  padding-bottom: 200px;
+}
+#companies .slick-dots{
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#companies .slick-dots li{
+  display: inline-block;
+}
+#companies .slick-dots li button {
+  font-size: 0px;
+  height: 12px;
+  width: 12px;
+  border: 0;
+  background: #ffc8c866;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 10px;
+}
+#companies .slick-dots li.slick-active button {
+  background: rgb(255, 255, 255);
+  border: 0;
+  
+}
+
+
+
+
+/* ========================
+EXPERT CSS STARTS FROM HERE
+======================== */
+
+#expert{
+  padding-top: 110px;
+  padding-bottom: 70px;
+  background-color: #f5f7fe;
+}
+#expert .left_content .student{
+  float: left;
+}
+#expert .left_content .junior{
+  float: left;
+}
+#expert .left_content h3{
+  display: inline-block;
+  background: #204ECF;
+  padding: 10px 80px;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  margin-top: 110px;
+}
+#expert .left_content h2{
+  font-size: 43px;
+  font-weight: bold;
+}
+#expert .left_content p{
+  font-size: 18px;
+  margin-top: 20px;
+}
+#expert .left_content h6{
+  display: inline-block;
+  background: #204ECF;
+  padding: 10px 80px;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 50%;
+}
+#expert .middle_content h4{
+  display: inline-block;
+  background: #204ECF;
+  padding: 10px 80px;
+  color: white;
+  font-size: 25px;
+  margin-left: 50%;
+  transform: translatex(-50%);
+  border-radius: 10px;
+  margin-top: 20px;
+  
+}
+#expert .right_content h4{
+  display: inline-block;
+  background: #204ECF;
+  padding: 10px 80px;
+  color: white;
+  font-size: 25px;
+  margin-left: 50%;
+  transform: translatex(-50%);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+#expert .right_content img{
+  margin-left: 50%;
+  transform: translatex(-50%);
+}
+#expert .middle_content img{
+  margin-left: 50%;
+  transform: translatex(-50%);
+  margin-top: 50px;
+}
+#expert .middle_content .logo{
+  margin-left: 50%;
+  transform: translatex(-50%);
+}
+
+#expert .logo{
+  width: 50%;
+}
+
+
+
+
+/* ========================
+INSTRUCTOR CSS STARTS FROM HERE
+======================== */
+#instractor {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+#instractor .instructor_content{
+  padding: 0px 10px
+}
+#instractor h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #262D3D;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#instractor img{
+  width: 100%;
+  repeat:no-repeat;
+  margin-bottom: 7px;
+}
+#instractor span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #809ABE;
+  font-weight: 400;
+}
+#instractor h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #415674;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+#instractor h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+#instractor ul {
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+#instractor ul li{
+  list-style: none;
+  font-size: 12px;
+  color: #686868;;
+}
+#instractor ul li .fa-star{
+  color: #ffac00;
+}
+#instractor .more_button_instructor{
+  margin-top: 30px;
+}
+
+
+
+
+/* ========================
+BLOG CSS STARTS FROM HERE
+======================== */
+
+#blog {
+  padding-top: 100px;
+}
+#blog h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #262D3D;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#blog img{
+  width: 100%;
+  repeat:no-repeat;
+  margin-bottom: 7px;
+}
+#blog span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #809ABE;
+  font-weight: 400;
+}
+#blog h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #262D3D;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+#blog a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #204ECF;
+  font-weight: 500;
+}
+
+
+
+/* ========================
+PROJECT CSS STARTS FROM HERE
+======================== */
+
+
+
+#project{
+  padding-bottom: 70px;
+}
+#project .one{
+  background-color: #204ECF;
+  border-radius: 7px;
+  margin-top: 70px;
+}
+#project h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+#project h6{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+}
+#project a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #204ECF;
+  font-weight: 400;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  border: 0;
+  padding: 10px 18px;
+  margin: 24px 0 51px 0;
+  display: inline-block
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+#testimonial-area{
+  background: #204ECF;
+  padding-top: 10px;
+}
+#testimonial-area .section-heading h2 {
+  line-height: 58px;
+  padding-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.testi-wrap {
+  position: relative;
+  height: 650px;
+  margin-top: -80px;
+}
+
+.client-single {
+  margin-top: 20px;
+  text-align: center;
+  position: absolute;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.client-info,
+.client-comment {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.client-single.inactive .client-comment,
+.client-single.inactive .client-info {
+  display: none;
+}
+.client-single.inactive .client-comment,
+.client-single.inactive .client-info {
+  opacity: 0;
+  visibility: hidden;
+}
+.client-single.position-1 {
+  -webkit-transform: scale(0.65);
+  transform: scale(0.65);
+}
+.client-single.position-2 {
+  left: -40px;
+  top: 105px;
+}
+.client-single.position-3 {
+  left: -60px;
+  top: 240px;
+  -webkit-transform: scale(0.4) !important;
+  transform: scale(0.4) !important;
+}
+.client-single.position-4 {
+  left: 55px;
+  top: 380px;
+}
+.client-single.position-5 {
+  top: 30px;
+  right: 55px;
+}
+.client-single.position-6 {
+  top: 225px;
+  right: -40px;
+}
+.client-single.position-7 {
+  top: 400px;
+  right: 45px;
+  -webkit-transform: scale(0.4) !important;
+  transform: scale(0.4) !important;
+}
+.client-single.active {
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 60%;
+}
+.client-single.active .client-comment,
+.client-single.active .client-info {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.client-single:not(.active) {
+  -webkit-transform: scale(0.55);
+  transform: scale(0.55);
+  z-index: 99;
+}
+.client-single.active .client-img {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 24px;
+  position: relative;
+}
+.client-single.active .client-img:before {
+  border-radius: 100%;
+  content: "";
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9d5bfe), to(#3890fe));
+  background-image: linear-gradient(180deg, #9d5bfe 0%, #3890fe 100%);
+  padding: 5px;
+  width: 160px;
+  height: 160px;
+  top: -4px;
+  left: 0px;
+  position: absolute;
+  z-index: -1;
+}
+.client-single .client-img img {
+  width: 150px;
+  border-radius: 50%;
+  border: 8px solid #d1e9ff;
+  cursor: pointer;
+}
+.client-single.active .client-img img {
+  max-width: 160px;
+  margin: 0 auto 24px;
+  border: 0;
+}
+.container_testimonial {
+  max-width: 70% !important;
+}
+.client-comment {
+  padding: 0 30px;
+}
+.client-comment h3 {
+  font-size: 17px;
+  color: #C9CBCF;
+}
+.client-comment span i {
+  font-size: 60px;
+  color: #0084ff;
+  margin: 40px 0 24px;
+  display: inline-block;
+}
+
+.client-info h3 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.client-info a {
+  color:#c7c7c7;
+}
+.client-info p {
+  color: #c7c7c7;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #testimonial-area .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .client-comment h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .client-single.active {
+    width: 60%;
+  }
+
+  .client-single:not(.active) {
+    -webkit-transform: scale(0.55);
+    transform: scale(0.35);
+  }
+
+  .client-single.position-3,
+.client-single.position-7 {
+    -webkit-transform: scale(0.3) !important;
+    transform: scale(0.3) !important;
+  }
+
+  .client-single.active .client-img img {
+    max-width: 100px;
+  }
+
+  .client-single.active .client-img::before {
+    padding: 5px;
+    width: 108px;
+    height: 108px;
+    top: -4px;
+    left: 6px;
+  }
+
+  .client-single.active .client-img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .testi-wrap {
+    height: 580px;
+  }
+
+  #testimonial-area {
+    padding: 100px 0 0;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #testimonial-area .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .client-comment h3 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .client-single.active {
+    width: 60%;
+  }
+
+  .client-comment span i {
+    font-size: 40px;
+  }
+
+  .client-single:not(.active) {
+    -webkit-transform: scale(0.55);
+    transform: scale(0.35);
+  }
+
+  .client-single.position-5,
+.client-single.position-7 {
+    right: 0;
+  }
+
+  .client-single.position-4 {
+    left: 0;
+  }
+
+  .client-single.position-3,
+.client-single.position-7 {
+    -webkit-transform: scale(0.3) !important;
+    transform: scale(0.3) !important;
+  }
+
+  .client-single.active .client-img img {
+    max-width: 80px;
+  }
+
+  .client-single.active .client-img::before {
+    padding: 5px;
+    width: 88px;
+    height: 88px;
+    top: -4px;
+    left: 16px;
+  }
+
+  .client-single.active .client-img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .testi-wrap {
+    height: 630px;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  #testimonial-area .section-heading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .client-comment h3 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .client-single.active {
+    width: 80%;
+  }
+
+  .client-comment span i {
+    font-size: 40px;
+  }
+
+  .client-single:not(.active) {
+    -webkit-transform: scale(0.25);
+    transform: scale(0.25);
+  }
+
+  .client-single.position-5,
+.client-single.position-7,
+.client-single.position-6 {
+    right: -70px;
+  }
+
+  .client-single.position-4 {
+    left: -60px;
+  }
+
+  .client-single.position-3 {
+    left: -75px;
+  }
+
+  .client-single.position-3,
+.client-single.position-7 {
+    -webkit-transform: scale(0.25) !important;
+    transform: scale(0.25) !important;
+  }
+
+  .client-single.active .client-img img {
+    max-width: 80px;
+  }
+
+  .client-single.active .client-img::before {
+    padding: 5px;
+    width: 88px;
+    height: 88px;
+    top: -4px;
+    left: 16px;
+  }
+
+  .client-single.active .client-img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .testi-wrap {
+    height: 600px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  #testimonial-area .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .client-comment h3 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .client-single.active {
+    width: 80%;
+  }
+
+  .client-comment span i {
+    font-size: 40px;
+  }
+
+  .client-single:not(.active) {
+    -webkit-transform: scale(0.25);
+    transform: scale(0.25);
+  }
+
+  .client-single.position-5,
+.client-single.position-7,
+.client-single.position-6 {
+    right: -70px;
+  }
+
+  .client-single.position-4 {
+    left: -60px;
+  }
+
+  .client-single.position-3 {
+    left: -75px;
+  }
+
+  .client-single.position-3,
+.client-single.position-7 {
+    -webkit-transform: scale(0.25) !important;
+    transform: scale(0.25) !important;
+  }
+
+  .client-single.active .client-img img {
+    max-width: 80px;
+  }
+
+  .client-single.active .client-img::before {
+    padding: 5px;
+    width: 88px;
+    height: 88px;
+    top: -4px;
+    left: 16px;
+  }
+
+  .client-single.active .client-img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .testi-wrap {
+    height: 550px;
+  }
+}
+
+
+/* ====================================
+=====Footer Part starts from here======
+==================================== */
+
+
+#footer{
+  background-color: #F5F7FE;
+  padding-top: 50px;
+}
+#footer img{
+  height: 50px;
+  margin-bottom: 15px;
+}
+#footer h6{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #415674;
+  font-weight: 400;
+  padding: 5px;
+  padding-right: 40px;
+}
+#footer h3{
+  color: #262D3D;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+#footer h5{
+  color: #809ABE;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 35px;
+}
+#footer i{
+  padding: 10px;
+}
+
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+
+/* =========================================
+affiliate page css starts from here=====================================================================================
+=========================================== */
+
+:root{
+  --primary-color:#FF5538;
+  --text-color: #29313D;
+  --primary-text: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+affiliate banner parts starts from here=====
+=========================================== */
+
+
+
+#affiliate_banner{
+  background-image: url(../images/affiliate/banner2.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+#affiliate_banner .overlay{
+  background-color: #0b35a79a;
+}
+#affiliate_banner .overlay .content{
+  padding-top: 350px;
+  padding-bottom: 350px;
+  text-align: center;
+  color: white;
+  
+}
+#affiliate_banner .overlay .content h1{
+  font-family: var(--primary-text);
+  font-size: 60px;
+  padding: 20px 0 20px 0;
+  font-weight: bold;
+}
+#affiliate_banner .overlay .content p{
+  font-size: 20px;
+  font-weight: normal;
+}
+#affiliate_banner .overlay .content .button{
+  padding-top: 15px;
+}
+#affiliate_banner .overlay .content button{
+  font-size: 20px;
+  padding:10px 25px ;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #ffc107;
+  border: 1px solid #ffc10700;
+  transition: all linear 0.4s;
+}
+#affiliate_banner .overlay .content button:hover{
+  background-color: #ffc10700;
+  border: 1px solid #ffc107;
+}
+#affiliate_banner .overlay .content button a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+/* =========================================
+affiliate banner parts endshere=====
+=========================================== */
+
+
+
+/* =========================================
+affiliate_reason section starts from here=====
+=========================================== */
+
+
+
+
+#affiliate_reason .head_content h1{
+  font-size: 40px;
+  color: #262D3D;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+#affiliate_reason .maincard{
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: .25rem;
+}
+#affiliate_reason .maincard .card_img_center{
+  width: 50%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#affiliate_reason .maincard .card_title{
+  font-size: 20px;
+  color: #262D3D;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 25px;
+}
+#affiliate_reason .maincard .card_title2{
+  font-size: 30px;
+  color: #262D3D;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 30px;
+}
+#affiliate_reason .maincard p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #415674;
+  font-weight: normal;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+/* =========================================
+affiliate_reason section ends here===========
+=========================================== */
+
+
+
+
+
+/* =========================================
+form section starts here====================
+=========================================== */
+
+
+
+#form{
+  background-image: url(../images/affiliate/diverse-friends-students-shoot.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#form .form-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 140px 0;
+  background: rgba(0, 0, 0, 0.8); 
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#form .left-part, form {
+  padding: 25px;
+}
+#form .left-part {
+  text-align: left;
+  color: white;
+}
+#form .left-part h1 {
+  padding: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#form .left-part p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+  margin-top: 15px;
+  text-align : justify;
+}
+#form .fa-graduation-cap {
+  font-size: 72px;
+}
+#form form {
+  background: rgba(176, 181, 199, 0.418); 
+  border-radius: 20px;
+  padding: 60px;
+}
+#form .title {
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+#form .title i{
+  font-size: 20px;
+  padding-right: 15px;
+}
+#form .info {
+  display: flex;
+  flex-direction: column;
+}
+#form input, select {
+  padding: 5px;
+  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #eee;
+  color: white;
+}
+#form input::placeholder {
+  color: #eee;
+}
+#form option:focus {
+  border: none;
+}
+#form option {
+  background: #204ECF; 
+  border: none;
+}
+#form .checkbox input {
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+#form .checkbox a {
+  color: #ffffff;
+}
+#form .checkbox a:hover {
+  color: #85d6de;
+}
+#form .btn-item{
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 5px; 
+  border: none;
+  background: #204ECF; 
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+#form button{
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 5px; 
+  border: none;
+  background: #204ECF; 
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+#form .btn-item {
+  display: inline-block;
+  margin: 20px 5px 0;
+}
+#form button {
+  width: 100%;
+}
+#form  button:hover, .btn-item:hover {
+  background: #85d6de;
+}
+#form  .main-block {
+  flex-direction: row;
+  height: calc(100% - 50px);
+}
+#form .left-part, form {
+  flex: 1;
+  height: auto;
+}
+
+/* =========================================
+form section ends here======================
+=========================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
